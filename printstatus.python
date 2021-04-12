@@ -1,0 +1,4 @@
+import xmlrpc.client
+
+rpc = xmlrpc.client.ServerProxy('http://localhost:7978')
+print(rpc.status())
